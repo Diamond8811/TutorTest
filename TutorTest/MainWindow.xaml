@@ -13,7 +13,7 @@
         </Grid.RowDefinitions>
         <Rectangle Fill="#FFE7FABF"></Rectangle>
         <Image Source="/Images/school_logo.png" Margin="0 0 100 0" HorizontalAlignment="Center"/>
-        <TextBlock Margin="70 0 0 0" FontSize ="27" Foreground="Blue" FontFamily="Comic Sans MS" HorizontalAlignment="Center" >TutorPro</TextBlock>
+        <TextBlock Margin="70 0 0 0" FontSize ="27" Foreground="#FF04A0FF" FontFamily="Comic Sans MS" HorizontalAlignment="Center">TutorPro</TextBlock>
         <Frame x:Name="MainFrame" Grid.Row="1"></Frame>
     </Grid>
 </Window>

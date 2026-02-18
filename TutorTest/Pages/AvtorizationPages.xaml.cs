@@ -41,5 +41,10 @@ namespace TutorTest.Pages
             }
 
         }
+
+        private void RegistrationBtn_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new RegistrationPage());
+        }
     }
 }

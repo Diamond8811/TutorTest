@@ -23,7 +23,7 @@
             
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                 <Button x:Name="Loginbtn" Click="Loginbtn_Click">Вход</Button>
-                <Button x:Name="RegistrationBtn">Регистрация</Button>
+                <Button x:Name="RegistrationBtn" Click="RegistrationBtn_Click">Регистрация</Button>
             </StackPanel>
         </StackPanel>
         
