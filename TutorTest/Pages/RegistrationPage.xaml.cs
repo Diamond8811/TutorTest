@@ -49,7 +49,7 @@ namespace TutorTest.Pages
                 {
                     MessageBox.Show("*\tМнимум 6 символов.\r\n*Минимум один символ верхнего регистра");
                 }
-                else if (!EmailTb.Text.EndsWith("@mail.ru") || !EmailTb.Text.EndsWith("@gmail.ru"))
+                else if (EmailTb.Text.EndsWith("@mail.ru") || EmailTb.Text.EndsWith("@gmail.ru"))
                 {
                     MessageBox.Show("Неправильно введена почта");
                 }
@@ -60,7 +60,8 @@ namespace TutorTest.Pages
                         Login = LoginTb.Text,
                         Password = PasswordTb.Text,
                         RoleID = 2
-                    });
+                    }
+                    );
                     Connection.Connection.db.Client.Add(new Client()
                     {
                         FirstName = FirstName.Text,

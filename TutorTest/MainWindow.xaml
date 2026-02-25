@@ -11,9 +11,19 @@
             <RowDefinition Height="24*"/>
             <RowDefinition Height="193*"/>
         </Grid.RowDefinitions>
-        <Rectangle Fill="#FFE7FABF"></Rectangle>
-        <Image Source="/Images/school_logo.png" Margin="0 0 100 0" HorizontalAlignment="Center"/>
-        <TextBlock Margin="70 0 0 0" FontSize ="27" Foreground="#FF04A0FF" FontFamily="Comic Sans MS" HorizontalAlignment="Center">TutorPro</TextBlock>
-        <Frame x:Name="MainFrame" Grid.Row="1"></Frame>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Background="LightBlue" Grid.Column="0"  Grid.Row="1" Width="150" HorizontalAlignment="Left">
+            <Button x:Name="Kursesbtn" Margin="5 15 5 10" Click="Kursesbtn_Click">Курсы</Button>
+            <Button Margin="5 10 5 10" >Мои курсы</Button>
+            <Button x:Name="Account" Margin="5 10 5 10" Click="Account_Click" >Аккаунт</Button>
+            <Button Background="Red" Margin="5 150 5 10" Click="Kursesbtn_Click">Выход</Button>
+        </StackPanel>
+        <Rectangle Grid.ColumnSpan="2" Fill="#FFE7FABF"></Rectangle>
+        <Image Grid.ColumnSpan="2" Source="/Images/school_logo.png" Margin="0 0 100 0" HorizontalAlignment="Center"/>
+        <TextBlock Grid.ColumnSpan="2" Margin="70 0 0 0" FontSize ="27" Foreground="#FF04A0FF" FontFamily="Comic Sans MS" HorizontalAlignment="Center">TutorPro</TextBlock>
+        <Frame x:Name="MainFrame" Grid.Row="1" Grid.Column="1"></Frame>
     </Grid>
 </Window>

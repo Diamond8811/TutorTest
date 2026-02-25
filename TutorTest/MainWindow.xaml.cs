@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using TutorTest.Pages;
+using TutorTest.Connection;
 
 namespace TutorTest
 {
@@ -25,6 +26,16 @@ namespace TutorTest
         {
             InitializeComponent();
             MainFrame.Navigate(new AvtorizationPages());
+        }
+
+        private void Kursesbtn_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new KatalpgPage());
+        }
+
+        private void Account_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Account());
         }
     }
 }

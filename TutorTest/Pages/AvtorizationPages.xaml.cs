@@ -33,7 +33,7 @@ namespace TutorTest.Pages
             var user = Connection.Connection.db.User.ToList().Find(x => x.Login == LoginTb.Text && x.Password == PasswordTb.Text);
             if (user != null)
             {
-
+                NavigationService.Navigate(new KatalpgPage());
             }
             else 
             {
