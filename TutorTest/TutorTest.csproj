@@ -216,6 +216,23 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Resource Include="Услугишколы\for company.jpg" />
+    <Resource Include="Услугишколы\online lessons.jpg" />
+    <Resource Include="Услугишколы\Английскийязык.jpg" />
+    <Resource Include="Услугишколы\Испанскийязык.jpg" />
+    <Resource Include="Услугишколы\Итальянский язык.jpg" />
+    <Resource Include="Услугишколы\киноклуб.jpg" />
+    <Resource Include="Услугишколы\Китайский язык.jpg" />
+    <Resource Include="Услугишколы\Немецкий язык.png" />
+    <Resource Include="Услугишколы\Подготовка к экзамену ACT.png" />
+    <Resource Include="Услугишколы\Подготовка к экзамену GMAT.png" />
+    <Resource Include="Услугишколы\Подготовка к экзамену GRE.jpeg" />
+    <Resource Include="Услугишколы\Подготовка к экзамену IELTS.jpg" />
+    <Resource Include="Услугишколы\Подготовка к экзамену SAT.png" />
+    <Resource Include="Услугишколы\Подготовка к экзамену TOEFL.jpg" />
+    <Resource Include="Услугишколы\Португальский язык.jpg" />
+    <Resource Include="Услугишколы\Французский язык.jpg" />
+    <Resource Include="Услугишколы\Японский язык.jpg" />
     <Resource Include="Images\school_logo.png" />
   </ItemGroup>
   <ItemGroup>

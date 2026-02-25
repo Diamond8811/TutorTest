@@ -4,11 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Media.Imaging;
 
 namespace TutorTest.Connection
 {
     public partial class Service
     {
+        public BitmapImage GetImage
+        {
+            get 
+            {
+                if (MainImagePath != null)
+                {
+                    return new BitmapImage(new Uri($"\\Images\\{MainImagePath}", UriKind.Relative));
+                }
+                else
+                {
+                    return new BitmapImage(new Uri(@"\Images\school_logo.png", UriKind.Relative));
+                }
+            }
+        }
         public string CostStr
         {
 

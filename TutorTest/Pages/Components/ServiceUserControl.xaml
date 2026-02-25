@@ -19,7 +19,7 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Image Grid.Column="0" Grid.RowSpan="4" Margin="10" x:Name="ServiceImg"></Image>
+            <Image Grid.Column="0" Grid.RowSpan="4" Margin="10" x:Name="ServiceImg" Source="{Binding GetImage}"></Image>
             <TextBlock x:Name="TitleTb" Grid.Column="1" Grid.Row="0" Text="{Binding Title}"/>
             <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1">
                 <TextBlock x:Name="CostTb" Grid.Column="1" Grid.Row="1" Text="{Binding Cost}" TextDecorations="Strikethrough" Visibility="{Binding CostVisibl}"/>
