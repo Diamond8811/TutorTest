@@ -30,7 +30,7 @@ namespace TutorTest
 
         private void Kursesbtn_Click(object sender, RoutedEventArgs e)
         {
-            MainFrame.Navigate(new KatalpgPage());
+            MainFrame.Navigate(new ServiceListPage());
         }
 
         private void Account_Click(object sender, RoutedEventArgs e)

@@ -3,30 +3,54 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace TutorTest.Connection
 {
-   internal partial class Service
+    public partial class Service
     {
-        public string CostStr()
+        public string CostStr
         {
-            if (Discount == null)
+
+            get
             {
-                return $"{Cost} рублей за {DurationInSeconds / 60} минут";
+                if (Discount == null)
+                {
+                    return $"{Cost:N0} рублей за {DurationInSeconds / 60} минут";
+                }
+                else
+                {
+                    return $"{(double)Cost * (1 - Discount)} рублей за {DurationInSeconds / 60} минут";
+                }
             }
-            else
+
+        }
+        public string DiscountStr
+        {
+            get
             {
-                return $"{(double)Cost * (1 - Discount)} рублей за {DurationInSeconds / 60} минут";
+                if (Discount != null)
+                {
+                    return $"*скидка {Discount * 100}%";
+                }
+                return null;
             }
         }
-        public string DiscountStr() 
+
+        public Visibility CostVisibl
         {
-            if (Discount != null)
+            get
             {
-                return $"*скидка {Discount * 100}%";
+                if (Discount == null)
+                {
+                    return Visibility.Collapsed;
+                }
+                else
+                {
+                    return Visibility.Visible;
+                }
+
             }
-            return null;
         }
-            
     }
 }

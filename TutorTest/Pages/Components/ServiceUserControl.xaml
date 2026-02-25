@@ -7,27 +7,29 @@
              mc:Ignorable="d" 
              d:DesignHeight="200" d:DesignWidth="750"
              Background="White">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="41*"/>
-            <ColumnDefinition Width="110*"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-        <Image Grid.Column="0" Grid.RowSpan="4" Margin="10" x:Name="ServiceImg"></Image>
-        <TextBlock x:Name="TitleTb" Grid.Column="1" Grid.Row="0" Text="{Binding Title}"/>
-        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1">
-            <TextBlock x:Name="CostTb" Grid.Column="1" Grid.Row="1" Text="{Binding Cost}" TextDecorations="Strikethrough"/>
-            <TextBlock x:Name="CostStrTb"  Text="{Binding CostStr}"/>
-        </StackPanel>
-        <TextBlock x:Name="DiscountStrTb" Grid.Column="1" Grid.Row="2" Text="{Binding DiscountStr}"/>
-        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Grid.Column="1" Grid.Row="3">
-            <Button Width="120" x:Name="EditBtn">Редактировать</Button>
-            <Button x:Name="DeleteBtn">Удалить</Button>
-        </StackPanel>
-    </Grid>
+    <Border Margin="10" BorderThickness="2" BorderBrush="Black">
+        <Grid Width="750" Height="200">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="41*"/>
+                <ColumnDefinition Width="110*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Image Grid.Column="0" Grid.RowSpan="4" Margin="10" x:Name="ServiceImg"></Image>
+            <TextBlock x:Name="TitleTb" Grid.Column="1" Grid.Row="0" Text="{Binding Title}"/>
+            <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1">
+                <TextBlock x:Name="CostTb" Grid.Column="1" Grid.Row="1" Text="{Binding Cost}" TextDecorations="Strikethrough" Visibility="{Binding CostVisibl}"/>
+                <TextBlock x:Name="CostStrTb"  Text="{Binding CostStr}"/>
+            </StackPanel>
+            <TextBlock x:Name="DiscountStrTb" Grid.Column="1" Grid.Row="2" Text="{Binding DiscountStr}"/>
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Grid.Column="1" Grid.Row="3">
+                <Button Width="120" x:Name="EditBtn">Редактировать</Button>
+                <Button x:Name="DeleteBtn">Удалить</Button>
+            </StackPanel>
+        </Grid>
+    </Border>
 </UserControl>

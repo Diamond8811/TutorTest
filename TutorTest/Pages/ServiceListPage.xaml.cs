@@ -12,22 +12,22 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using TutorTest.Connection;
+using TutorTest.Pages.Components;
 
-namespace TutorTest.Pages.Components
+namespace TutorTest.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для ServiceUserControl.xaml
+    /// Логика взаимодействия для ServiceListPage.xaml
     /// </summary>
-    public partial class ServiceUserControl : UserControl
+    public partial class ServiceListPage : Page
     {
-        Service service;
-        public ServiceUserControl(Service _service)
+        public ServiceListPage()
         {
             InitializeComponent();
-            service = _service;
-            this.DataContext = _service;
-            //TitleTb.Text = service.Title;
+            foreach (var servive in Connection.Connection.db.Service.ToList())
+            {
+                ServiceWp.Children.Add(new ServiceUserControl(servive));
+            }
         }
     }
 }

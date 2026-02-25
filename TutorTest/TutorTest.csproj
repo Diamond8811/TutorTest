@@ -150,11 +150,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\KatalpgPage.xaml">
+    <Page Include="Pages\RegistrationPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\RegistrationPage.xaml">
+    <Page Include="Pages\ServiceListPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -166,11 +166,11 @@
     <Compile Include="Pages\Components\ServiceUserControl.xaml.cs">
       <DependentUpon>ServiceUserControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\KatalpgPage.xaml.cs">
-      <DependentUpon>KatalpgPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\RegistrationPage.xaml.cs">
       <DependentUpon>RegistrationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ServiceListPage.xaml.cs">
+      <DependentUpon>ServiceListPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
