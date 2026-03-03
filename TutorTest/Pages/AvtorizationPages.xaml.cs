@@ -22,7 +22,7 @@ namespace TutorTest.Pages
     /// </summary>
     public partial class AvtorizationPages : Page
     {
-        
+        public static User autorizedUser;
         public AvtorizationPages()
         {
             InitializeComponent();
@@ -30,8 +30,8 @@ namespace TutorTest.Pages
 
         private void Loginbtn_Click(object sender, RoutedEventArgs e)
         {
-            var user = Connection.Connection.db.User.ToList().Find(x => x.Login == LoginTb.Text && x.Password == PasswordTb.Text);
-            if (user != null)
+            autorizedUser = Connection.Connection.db.User.ToList().Find(x => x.Login == LoginTb.Text && x.Password == PasswordTb.Text);
+            if (autorizedUser != null)
             {
                 NavigationService.Navigate(new ServiceListPage());
             }

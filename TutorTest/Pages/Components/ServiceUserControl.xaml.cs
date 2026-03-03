@@ -28,6 +28,11 @@ namespace TutorTest.Pages.Components
             service = _service;
             this.DataContext = _service;
             //TitleTb.Text = service.Title;
+            if (AvtorizationPages.autorizedUser.RoleID != 1)
+            {
+                EditBtn.Visibility = Visibility.Collapsed;
+                DeleteBtn.Visibility = Visibility.Collapsed;
+            }
         }
     }
 }

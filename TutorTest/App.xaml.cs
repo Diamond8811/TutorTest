@@ -5,6 +5,8 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using TutorTest.Connection;
+using TutorTest.Pages;
 
 namespace TutorTest
 {
@@ -13,5 +15,6 @@ namespace TutorTest
     /// </summary>
     public partial class App : Application
     {
+        
     }
 }

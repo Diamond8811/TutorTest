@@ -67,5 +67,17 @@ namespace TutorTest.Connection
 
             }
         }
+        public decimal CostOfDiscount
+        {
+            get 
+            {
+                if (Discount != null)
+                {
+                    return Cost * (1 - (decimal)Discount);
+                }
+                return Cost;
+                
+            }
+        }
     }
 }

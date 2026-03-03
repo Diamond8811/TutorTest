@@ -65,9 +65,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Connection\PartialClass\Service.cs" />
-    <Compile Include="Pages\Account.xaml.cs">
-      <DependentUpon>Account.xaml</DependentUpon>
-    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -138,10 +135,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Pages\Account.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Pages\AvtorizationPages.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -216,23 +209,17 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
-    <Resource Include="Услугишколы\for company.jpg" />
-    <Resource Include="Услугишколы\online lessons.jpg" />
-    <Resource Include="Услугишколы\Английскийязык.jpg" />
-    <Resource Include="Услугишколы\Испанскийязык.jpg" />
-    <Resource Include="Услугишколы\Итальянский язык.jpg" />
-    <Resource Include="Услугишколы\киноклуб.jpg" />
-    <Resource Include="Услугишколы\Китайский язык.jpg" />
-    <Resource Include="Услугишколы\Немецкий язык.png" />
-    <Resource Include="Услугишколы\Подготовка к экзамену ACT.png" />
-    <Resource Include="Услугишколы\Подготовка к экзамену GMAT.png" />
-    <Resource Include="Услугишколы\Подготовка к экзамену GRE.jpeg" />
-    <Resource Include="Услугишколы\Подготовка к экзамену IELTS.jpg" />
-    <Resource Include="Услугишколы\Подготовка к экзамену SAT.png" />
-    <Resource Include="Услугишколы\Подготовка к экзамену TOEFL.jpg" />
-    <Resource Include="Услугишколы\Португальский язык.jpg" />
-    <Resource Include="Услугишколы\Французский язык.jpg" />
-    <Resource Include="Услугишколы\Японский язык.jpg" />
+    <Resource Include="Images\forcompany.jpg" />
+    <Resource Include="Images\onlinelessons.jpg" />
+    <Resource Include="Images\Итальянскийязык.jpg" />
+    <Resource Include="Images\Китайскийязык.jpg" />
+    <Resource Include="Images\Немецкийязык.png" />
+    <Resource Include="Images\ПодготовкакэкзаменуACT.png" />
+    <Resource Include="Images\ПодготовкакэкзаменуGRE.jpeg" />
+    <Resource Include="Images\ПодготовкакэкзаменуTOEFL.jpg" />
+    <Resource Include="Images\Португальскийязык.jpg" />
+    <Resource Include="Images\Французскийязык.jpg" />
+    <Resource Include="Images\Японскийязык.jpg" />
     <Resource Include="Images\school_logo.png" />
   </ItemGroup>
   <ItemGroup>
